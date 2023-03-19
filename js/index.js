@@ -558,7 +558,8 @@ function inputsValidation() {
         ageValidation() &&
         passwordValidation() &&
         repasswordValidation()) {
-        submitBtn.removeAttribute("disabled")
+        submitBtn.removeAttribute("disabled");
+         $('input').val('');
     } else {
         submitBtn.setAttribute("disabled", true)
     }
